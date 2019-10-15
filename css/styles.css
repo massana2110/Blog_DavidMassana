@@ -77,3 +77,21 @@ main {
 .article{
     background-color: #fff;
 }
+
+img {
+    width: 300px;
+    float: left;
+}
+
+footer {
+    background-color: #000;
+    margin-top: 1em;
+}
+
+footer p{
+    font-family: 'Acme', sans-serif;
+    color: #778beb;
+    text-align: center;
+    padding: 1em;
+    text-transform: uppercase;
+}
