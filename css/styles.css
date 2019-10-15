@@ -61,6 +61,7 @@ main {
     grid-template-rows: repeat(1fr, 8);
     grid-row-gap: 20px;
 }
+
 .content {
     width: 60%;
 }
@@ -78,9 +79,84 @@ main {
     background-color: #fff;
 }
 
+.flex {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.float-window {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.float-content {
+    font-family: 'Varela Round', sans-serif;
+    position: relative;
+    background-color: #FEFEFE;
+    margin: auto;
+    width: 50%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+    animation-name: float_animate;
+    animation-duration: 1s;
+}
+
+@keyframes float_animate{
+    from{top: -330px; opacity: 0;}
+    to{top:0; opacity: 1;}
+}
+
+.close {
+    color: #F2F2F2;
+    font-size: 30px;
+}
+
+.close:hover{
+    color: #7f8c8d;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.float-header, .float-footer {
+    padding: 10px 15px;
+    background-color: #778beb;
+    color: #F2F2F2;
+}
+
+.float-body {
+    padding: 20px 16px;
+}
+.float-body p {
+    text-align: justify;
+}
+
+.fecha {
+    color: #2f3542;
+    font-style: italic;
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+
+.info {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 0.8em;
+    text-align: justify;
+    margin-top: 10px;
+}
+
 img {
     width: 250px;
     float: left;
+    margin: 0 10px 5px 0;
 }
 
 footer {
