@@ -1,6 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
+
 *, ::before, ::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-size: calc(0.5em + 1vh);
+}
+
+body {
+    background-image: url("../images/background.png");
+}
+
+.container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#logo {
+    width: 100%;
+    background-color: #000;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+#logo span {
+    font-family: 'Acme', sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 5px;
+    color: #778beb;
+    margin-left: 15px;
+}
+
+main {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center; 
+}
+
+#titular {
+    padding: 4em 0;
+    margin-bottom: 2em;
+    border-radius: 10px;
+    background-color: rgba(119, 139, 235,0.85);
+    width: 60%;
+}
+
+#titular h1{
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    font-size: 2em;
+    color: #fff;
+    
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr, 8);
+    grid-row-gap: 20px;
+}
+.content {
+    width: 60%;
+}
+
+.content h2 {
+    text-align: center;
+    background-color: #778beb;
+    border-radius: 5px 5px 0 0;
+    padding: 10px 0;
+    font-family: 'Varela Round', sans-serif;
+    color: #fff;
+}
+
+.article{
+    background-color: #fff;
 }
