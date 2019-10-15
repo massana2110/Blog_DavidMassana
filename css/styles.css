@@ -79,7 +79,7 @@ main {
 }
 
 img {
-    width: 300px;
+    width: 250px;
     float: left;
 }
 
@@ -94,4 +94,11 @@ footer p{
     text-align: center;
     padding: 1em;
     text-transform: uppercase;
+}
+
+@media screen and (max-width: 480px) {
+    img {
+        width: 100%;
+        height: auto;
+    }
 }
