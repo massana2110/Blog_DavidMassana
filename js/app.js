@@ -1,11 +1,14 @@
 let float = document.getElementById('myFloat')
 let flex = document.getElementById('flex')
-let open = document.getElementById('open-article')
+let openButtons = document.querySelectorAll('.open-article')
 let close = document.getElementById('close')
 
-open.addEventListener('click', function(){
-    float.style.display = 'block'
-})
+
+openButtons.forEach(boton => {
+    boton.addEventListener('click', function(event){
+        float.style.display = 'block'
+    })
+});
 
 close.addEventListener('click', function () {
     float.style.display = 'none'
